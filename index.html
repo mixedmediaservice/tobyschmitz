@@ -21,13 +21,15 @@
       position: relative;
     }
 
+    /* Removed dark overlay
     body::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.3); /* subtle dark overlay */
+      background: rgba(0, 0, 0, 0.3);
       z-index: 0;
     }
+    */
 
     body > * {
       position: relative;
@@ -41,9 +43,13 @@
       letter-spacing: -1.5px;
     }
 
-    p {
-      font-size: 2rem;
-      margin: 1rem 0 0.5rem 0; /* reduced bottom margin */
+    .small-links {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .small-links p {
+      margin: 0.5rem 0;
     }
 
     a {
@@ -51,25 +57,25 @@
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 500;
-      font-size: 1.5rem;
       border-bottom: 1px solid transparent;
     }
 
     a:hover {
       border-bottom: 1px solid white;
     }
-
-    a:last-of-type {
-      margin-top: 0; /* prevent extra spacing above last link */
-    }
   </style>
 </head>
 <body>
   <h1>Here lies Toby.</h1>
-  <p>
-    <a href="https://www.imdb.com/name/nm1070252/" target="_blank">IMDb</a> |
-    <a href="mailto:contact@tobyschmitz.com">Contact</a> |
-    <a href="https://www.theguardian.com/books/2025/may/26/the-empress-murders-by-toby-schmitz-review-jazz-age-mystery-packed-with-corpses-and-charisma" target="_blank">The Empress Murders</a>
-  </p>
+
+  <div class="small-links">
+    <p>
+      <a href="https://www.imdb.com/name/nm1070252/" target="_blank">IMDb</a> ·
+      <a href="mailto:contact@tobyschmitz.com">Contact</a>
+    </p>
+    <p>
+      <a href="https://www.theguardian.com/books/2025/may/26/the-empress-murders-by-toby-schmitz-review-jazz-age-mystery-packed-with-corpses-and-charisma" target="_blank">The Empress Murders</a>
+    </p>
+  </div>
 </body>
 </html>
