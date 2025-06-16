@@ -36,21 +36,23 @@
     .small-links {
       font-size: 1.2rem;
       margin-top: 1.5rem;
-    }
-
-    .link-row {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.8rem;
-      margin: 0.5rem 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
     }
 
-    @media (max-width: 480px) {
-      .link-row {
-        flex-direction: column;
-        gap: 0.3rem;
-      }
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .social-icons a img {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
     }
 
     a {
@@ -69,11 +71,21 @@
   <h1>Here lies Toby.</h1>
 
   <div class="small-links">
-    <p class="link-row">
-      <a href="https://www.imdb.com/name/nm1070252/" target="_blank">IMDb</a>
-      <a href="mailto:contact@tobyschmitz.com">Contact</a>
-      <a href="https://www.theguardian.com/books/2025/may/26/the-empress-murders-by-toby-schmitz-review-jazz-age-mystery-packed-with-corpses-and-charisma" target="_blank">The Empress Murders</a>
-    </p>
+    <a href="https://www.imdb.com/name/nm1070252/" target="_blank">IMDb</a>
+    <a href="mailto:contact@tobyschmitz.com">Contact</a>
+    <a href="https://www.theguardian.com/books/2025/may/26/the-empress-murders-by-toby-schmitz-review-jazz-age-mystery-packed-with-corpses-and-charisma" target="_blank">The Empress Murders</a>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tobymschmitz/" target="_blank" aria-label="Instagram">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://x.com/fallofasparrow/" target="_blank" aria-label="X (Twitter)">
+        <img src="x.png" alt="X (Twitter)">
+      </a>
+      <a href="https://www.tiktok.com/@tobyschmitz" target="_blank" aria-label="TikTok">
+        <img src="tiktok.png" alt="TikTok">
+      </a>
+    </div>
   </div>
 </body>
 </html>
