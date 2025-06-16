@@ -43,7 +43,7 @@
 
     p {
       font-size: 2rem;
-      margin: 2rem 0;
+      margin: 1rem 0 0.5rem 0; /* reduced bottom margin */
     }
 
     a {
@@ -58,6 +58,10 @@
     a:hover {
       border-bottom: 1px solid white;
     }
+
+    a:last-of-type {
+      margin-top: 0; /* prevent extra spacing above last link */
+    }
   </style>
 </head>
 <body>
@@ -67,6 +71,5 @@
     <a href="mailto:contact@tobyschmitz.com">Contact</a>
   </p>
   <a href="https://www.theguardian.com/books/2025/may/26/the-empress-murders-by-toby-schmitz-review-jazz-age-mystery-packed-with-corpses-and-charisma" target="_blank">The Empress Murders</a>
-  
 </body>
 </html>
